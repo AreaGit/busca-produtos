@@ -1,0 +1,108 @@
+/* Importando a fonte Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #C43441, #EFC545);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.main-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #C43441;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: 600;
+    color: #9A3C33;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #EFC545;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #C43441;
+    box-shadow: 0 0 8px rgba(196, 52, 65, 0.5);
+}
+
+button {
+    background-color: #C43441;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #9A3C33;
+}
+
+.resultado-pesquisa {
+    margin-top: 20px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 22px;
+    color: #C43441;
+}
+
+#infoProd {
+    background: #EFC545;
+    padding: 15px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 16px;
+    margin-top: 10px;
+    min-height: 50px;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
