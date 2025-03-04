@@ -50,6 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const resultadoDiv = document.getElementById("infoProd");
     const nomeProdutoSpan = document.getElementById("nomeProduto");
 
+    inputPesquisa.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Evita comportamento padrão do formulário
+            botaoPesquisar.click();
+        }
+    });
+
     botaoPesquisar.addEventListener("click", async function () {
         const nomeProduto = inputPesquisa.value.trim();
         if (!nomeProduto) {
