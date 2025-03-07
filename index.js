@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname)));
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/inicio', (req, res) => {
     res.sendFile(path.join(__dirname, 'html', 'index.html'));
 });
 
