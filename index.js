@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/inicio', (req, res) => {
-    res.sendFile(path.join(__dirname, 'html', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 //Rota GET para busca de produtos
