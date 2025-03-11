@@ -2,13 +2,6 @@
   "name": "busca-produtos",
   "version": "1.0.0",
   "main": "index.js",
-  "builds": [
-    { "src": "index.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "index.js" },
-    { "src": "/(.*)", "dest": "/public/$1" }
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
