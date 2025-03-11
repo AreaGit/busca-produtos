@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 8008;
+const port = process.env.PORT || 8008;
 const path = require('path');
 const multer = require('multer');
 const xlsx = require('xlsx');
